@@ -1,9 +1,8 @@
 # What is the Secret to Getting the Second Date?
 ### What influences love at first sight? (Or, at least, love in the first four minutes?) 
 
-# Introduction
-## About the data:
-'''
+### Introduction
+```
 -Data was gathered from 552 participants in experimental speed dating events from 2002-2004.
 
 -This experiment was created by Columbia Business School professors Ray Fisman and Sheena Iyengar for their paper Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment.
@@ -23,4 +22,5 @@
     -Self-Perception Across Key Attributes
     -Beliefs on What Others Find Valuable in a Mate
     -Lifestyle Information
+```
 
