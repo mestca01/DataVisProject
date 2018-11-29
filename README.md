@@ -10,12 +10,12 @@
 * During the events, the attendees would have a four minute "first date" with every other participant of the opposite sex.
 
 * At the end of their four minutes, participants were asked if they would like to see their date again. They were also asked to rate their date on six attributes:
-    1.Attractiveness
-    2.Sincerity
-    3.Intelligence
-    4.Fun
-    5.Ambition
-    6.Shared Interests
+    * Attractiveness
+    * Sincerity
+    * Intelligence
+    * Fun
+    * Ambition
+    * Shared Interests
     
 * The dataset also includes questionnaire data gathered from participants at different points in the process. These fields include:
     -Demographics
