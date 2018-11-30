@@ -47,14 +47,27 @@ Introduction:
    We also discovered that one of the speed dating waves, wave 12, would affect our data negatively.   This particular wave had a certain restriction that was inconsistent with the rest of our data.  In this wave, the participants were only allowed to say yes to a second date to 50% of their dates.  We decided that these rows risked affecting our results negatively.  Since we have thousands of observations in this data set anyway, we decided that it would be beneficial to our analysis if we removed wave 12 from our data frame.
 
 ### Experimenting With the Data
-
-.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Correlation%20Heatmap.png
-
+--Heatmap--
 In the beginning of our exploration, we thought about making a scatterplot matrix of all of the activity interest values (i.e. sports interest from 1-10), but found a much better way of visualizing correlations, called a heatmap matrix.  This showed us correlation on a scale from dark color (low correlation) to light color (high correlation).  From this, we were able to see that some interests, like sports and TV sports, or art and museums, had high correlation with each other, indicating that if people were interested in art, they were more likely to be interested in museums, and the same for sports and TV sports. Some examples of interests that did not correlate quite often involved sports and fine arts-related activities.
 
-.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Religious%20Preference.png
-.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Racial%20Preference.png
+--religion--
+--race--
 From these bar graphs, we found an answer to an early question that we had.  For whether or not it was important that a person you date has the same racial and religious background (on a scale of 1-10), we found that both graphs were very similar.  Most people, by a large margin, had no preference (score of 1), and very few people preferred that racial and religious background of their partner be the same as theirs (score of 10). Later, we’ll discuss how racial and/or religious preference impact your likelihood of getting a second date.
 
+--you call--
+Even if a participant received a match, a majority of them did not call their match.
 
+--them call--
+We noticed the same pattern with participants’ matches, who also chickened out and did that call.  This could be due to the participants being nervous about contacting the person, even when they knew they had a match.
+
+--how many matches--
+Most people, regardless of how many matches they received, only picked one match to go on a date with. Perhaps more people want to be loyal or simply feel better about dating when they are just dating one person.
+
+Formulating our Question
+-------------------------
+From experimenting in python with our data, we decided to focus on a single, overarching question: What is the secret to getting a second date?  To solve this question, we first looked at each genders’ responses to questions regarding each of the six main attributes.
+
+--look for in opposite sex--
+We can see that there is a great difference between what male and female participants are looking for.
+Men are mostly looking for attractive women, while women are looking for a well-rounded man. Women prefer intelligence, sincerity, and fun about as much as attractiveness. For male participants, the attractiveness of the female is given a lot more weight, and the ambitiousness or if they have any shared interests are not ranked as high. For females, the points are more evenly distributed across all of the attributes, with intelligence ranked slightly higher compared to others.
 
