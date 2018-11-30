@@ -47,6 +47,7 @@ Introduction:
    We also discovered that one of the speed dating waves, wave 12, would affect our data negatively.   This particular wave had a certain restriction that was inconsistent with the rest of our data.  In this wave, the participants were only allowed to say yes to a second date to 50% of their dates.  We decided that these rows risked affecting our results negatively.  Since we have thousands of observations in this data set anyway, we decided that it would be beneficial to our analysis if we removed wave 12 from our data frame.
 
 ### Experimenting With the Data
+
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Correlation%20Heatmap.png
 
 In the beginning of our exploration, we thought about making a scatterplot matrix of all of the activity interest values (i.e. sports interest from 1-10), but found a much better way of visualizing correlations, called a heatmap matrix.  This showed us correlation on a scale from dark color (low correlation) to light color (high correlation).  From this, we were able to see that some interests, like sports and TV sports, or art and museums, had high correlation with each other, indicating that if people were interested in art, they were more likely to be interested in museums, and the same for sports and TV sports. Some examples of interests that did not correlate quite often involved sports and fine arts-related activities.
@@ -82,6 +83,12 @@ Additionally, men’s predictions were not far off either. By comparing males’
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Self-Evaluation.png
 While there is no point allocation, on average, both genders do not rate themselves any lower than a 7/10 in these attributes. It is interesting to note that there is very little variance between male and female self-evaluation. Also, it is interesting to see that the perception of self intelligence gets the highest ratings when the perception of self attractiveness gets the lowest. (Shared interests cannot be a field because you cannot rate yourself on whether you have shared interests with yourself).
 
+.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Racial%20Preference.png
+.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Religious%20Preference.png
+
+	When looking at box plot comparisons of broken hearts by religious and racial preference (on a scale of one to ten, how important is it that your partner be the same race/religion as you?), we were surprised to see that both comparisons had matching box plots, indicating that racial and religious preference also had no significant impact on broken hearts.
+
+
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Ambition.png
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Attractiveness.png
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20%22Fun-ness%22.png
@@ -89,16 +96,11 @@ While there is no point allocation, on average, both genders do not rate themsel
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Shared%20Interests.png
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Sincerity.png
 
+The only box plot comparison that appears to be different from the others is intelligence.  For broken hearts, the observations are between a six and a ten score for intelligence, while matches are between three and ten.  However, this is not a significant difference, because 50% of the data is still centered between a 6 and an 8 score for intelligence, and broken hearts have several outliers below an intelligence score of six, indicating that a participant’s intelligence does not appear to affect their chances of having a broken heart.
+
 Interestingly enough, although our bar graphs showed that people generally prefer that their partner is attractive and intelligent, when looking at these plots, a participant’s grade by their partner does not seem to affect whether the participant has a broken heart or does not have a broken heart.  This suggests that none of these characteristics matter when securing a second date.  It instead suggests that there may be other variables present that cannot be measured on a scale of 1-10.  In the end, it is clear that you should just be yourself and not worry about what your grade may be on certain characteristics.
 
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Nothing%20Matters.jpeg
-
-The only box plot comparison that appears to be different from the others is intelligence.  For broken hearts, the observations are between a six and a ten score for intelligence, while matches are between three and ten.  However, this is not a significant difference, because 50% of the data is still centered between a 6 and an 8 score for intelligence, and broken hearts have several outliers below an intelligence score of six, indicating that a participant’s intelligence does not appear to affect their chances of having a broken heart.
-
-.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Racial%20Preference.png
-.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Religious%20Preference.png
-
-	When looking at box plot comparisons of broken hearts by religious and racial preference (on a scale of one to ten, how important is it that your partner be the same race/religion as you?), we were surprised to see that both comparisons had matching box plots, indicating that racial and religious preference also had no significant impact on broken hearts.
 
 Conclusion
 Although this is slightly disappointing, it looks like there is no definitive answer to getting a second date. It's not interests, attractiveness, or other traits. Really it's just how much someone likes you. It looks like all that really matters is the decision of both participants, and perhaps whether or not they liked one another. BE YOURSELF!
