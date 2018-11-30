@@ -48,6 +48,7 @@ Introduction:
 
 ### Experimenting With the Data
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Correlation%20Heatmap.png
+
 In the beginning of our exploration, we thought about making a scatterplot matrix of all of the activity interest values (i.e. sports interest from 1-10), but found a much better way of visualizing correlations, called a heatmap matrix.  This showed us correlation on a scale from dark color (low correlation) to light color (high correlation).  From this, we were able to see that some interests, like sports and TV sports, or art and museums, had high correlation with each other, indicating that if people were interested in art, they were more likely to be interested in museums, and the same for sports and TV sports. Some examples of interests that did not correlate quite often involved sports and fine arts-related activities.
 
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Religious%20Preference.png
@@ -96,6 +97,7 @@ The only box plot comparison that appears to be different from the others is int
 
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Racial%20Preference.png
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Broken%20Heart%20-%20Religious%20Preference.png
+
 	When looking at box plot comparisons of broken hearts by religious and racial preference (on a scale of one to ten, how important is it that your partner be the same race/religion as you?), we were surprised to see that both comparisons had matching box plots, indicating that racial and religious preference also had no significant impact on broken hearts.
 
 Conclusion
@@ -111,5 +113,6 @@ However, we did learn a few things along the way:
 There is one factor, however, that affects your chances…
 
 .. figure:: https://github.com/mestca01/DataVisProject/blob/master/Decision%20by%20Gender.png
+
 Even though there seem to be no specific attributes to enhance your chances for getting a second date, your gender plays a role. It looks like women received about 2200 'no' and about 2000 'yes' for the decision question "Would you like to see him or her again?". Men received about 2600 'no' and about 1500 'yes'. In other words, men are more likely to be rejected by women than women are to be rejected by men. Women appear to be more selective.
 
