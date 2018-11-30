@@ -54,5 +54,9 @@ In the beginning of our exploration, we thought about making a scatterplot matri
 --race--
 From these bar graphs, we found an answer to an early question that we had.  For whether or not it was important that a person you date has the same racial and religious background (on a scale of 1-10), we found that both graphs were very similar.  Most people, by a large margin, had no preference (score of 1), and very few people preferred that racial and religious background of their partner be the same as theirs (score of 10). Later, we’ll discuss how racial and/or religious preference impact your likelihood of getting a second date.
 
+--you call--
+Even if a participant received a match, a majority of them did not call their match.
+--them call--
+We noticed the same pattern with participants’ matches, who also chickened out and did that call.  This could be due to the participants being nervous about contacting the person, even when they knew they had a match.
 
 
