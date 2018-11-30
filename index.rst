@@ -71,3 +71,36 @@ From experimenting in python with our data, we decided to focus on a single, ove
 We can see that there is a great difference between what male and female participants are looking for.
 Men are mostly looking for attractive women, while women are looking for a well-rounded man. Women prefer intelligence, sincerity, and fun about as much as attractiveness. For male participants, the attractiveness of the female is given a lot more weight, and the ambitiousness or if they have any shared interests are not ranked as high. For females, the points are more evenly distributed across all of the attributes, with intelligence ranked slightly higher compared to others.
 
+--think oppisite sex looks for--
+Both men and women can predict what the opposite sex are looking for in their partners to a certain degree. Women strongly feel that men are most concerned with a woman’s attractiveness and that other attributes are not as important, especially ambitiousness.
+Comparing female and male answers in the first graph, we can see that there are not that much differences between the two. We can say that women almost accurately predicted what men are looking for in their partners (i.e. attractiveness).
+Additionally, men’s predictions were not far off either. By comparing males’ responses here and female’s responses in the first graph, what men think women are looking for also closely resembles what women say they are looking for. The main differences, though, are a higher attractiveness score and a lower shared interest score.
+
+	It is interesting to note in the first graph, on average, men allocate approximately 27/100 points for attractiveness. However, on average in the second graph, women think that men are allocating approximately 36/100 points for attractiveness. From this, women think men in general are more shallow than they actually are (even though they are somewhat).
+
+--self-eval--
+While there is no point allocation, on average, both genders do not rate themselves any lower than a 7/10 in these attributes. It is interesting to note that there is very little variance between male and female self-evaluation. Also, it is interesting to see that the perception of self intelligence gets the highest ratings when the perception of self attractiveness gets the lowest. (Shared interests cannot be a field because you cannot rate yourself on whether you have shared interests with yourself).
+
+--six attribute boxplot comparisons--
+Interestingly enough, although our bar graphs showed that people generally prefer that their partner is attractive and intelligent, when looking at these plots, a participant’s grade by their partner does not seem to affect whether the participant has a broken heart or does not have a broken heart.  This suggests that none of these characteristics matter when securing a second date.  It instead suggests that there may be other variables present that cannot be measured on a scale of 1-10.  In the end, it is clear that you should just be yourself and not worry about what your grade may be on certain characteristics.
+
+The only box plot comparison that appears to be different from the others is intelligence.  For broken hearts, the observations are between a six and a ten score for intelligence, while matches are between three and ten.  However, this is not a significant difference, because 50% of the data is still centered between a 6 and an 8 score for intelligence, and broken hearts have several outliers below an intelligence score of six, indicating that a participant’s intelligence does not appear to affect their chances of having a broken heart.
+
+--racial/religious boxplots--
+	When looking at box plot comparisons of broken hearts by religious and racial preference (on a scale of one to ten, how important is it that your partner be the same race/religion as you?), we were surprised to see that both comparisons had matching box plots, indicating that racial and religious preference also had no significant impact on broken hearts.
+
+Conclusion
+Although this is slightly disappointing, it looks like there is no definitive answer to getting a second date. It's not interests, attractiveness, or other traits. Really it's just how much someone likes you. It looks like all that really matters is the decision of both participants, and perhaps whether or not they liked one another. BE YOURSELF!
+
+However, we did learn a few things along the way:
+   * More participants experienced heartbreak than those that found love -- so don't feel too bad
+   * People get their heartbroken regardless of their personal traits like attractiveness, so if you strike out, it's not you that is the problem
+   * There is no one trait that makes you likeable
+   * Being yourself is important for securing that second date!
+   * There might exist some immeasurable traits that people have that make them more appealing to certain people
+
+There is one factor, however, that affects your chances…
+
+--gender dec_o--
+Even though there seem to be no specific attributes to enhance your chances for getting a second date, your gender plays a role. It looks like women received about 2200 'no' and about 2000 'yes' for the decision question "Would you like to see him or her again?". Men received about 2600 'no' and about 1500 'yes'. In other words, men are more likely to be rejected by women than women are to be rejected by men. Women appear to be more selective.
+
