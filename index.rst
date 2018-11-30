@@ -45,3 +45,14 @@ Introduction:
    However, we discovered that there were some columns and rows that could have possibly affected our results negatively.  We decided to take out columns that were missing large amounts of data and were not that important for the question that we were asking (the data set contains 190 columns, so we were not very worried about taking some out).  We took out these columns in python using “iloc” to select our columns and “concat” to put all of them together into a new data frame.  This allows us to go back and add any columns that we took out in case we needed them in the future.  Taking these columns out in Excel, or directly from the csv, would permanently delete these columns, not allowing us to add any of the columns back if we needed them.  It also allows us to use pandas’ “dropnas” without deleting rows that have N/As in columns that we do not need.
    
    We also discovered that one of the speed dating waves, wave 12, would affect our data negatively.   This particular wave had a certain restriction that was inconsistent with the rest of our data.  In this wave, the participants were only allowed to say yes to a second date to 50% of their dates.  We decided that these rows risked affecting our results negatively.  Since we have thousands of observations in this data set anyway, we decided that it would be beneficial to our analysis if we removed wave 12 from our data frame.
+
+### Experimenting With the Data
+--Heatmap--
+In the beginning of our exploration, we thought about making a scatterplot matrix of all of the activity interest values (i.e. sports interest from 1-10), but found a much better way of visualizing correlations, called a heatmap matrix.  This showed us correlation on a scale from dark color (low correlation) to light color (high correlation).  From this, we were able to see that some interests, like sports and TV sports, or art and museums, had high correlation with each other, indicating that if people were interested in art, they were more likely to be interested in museums, and the same for sports and TV sports. Some examples of interests that did not correlate quite often involved sports and fine arts-related activities.
+
+--religion--
+--race--
+From these bar graphs, we found an answer to an early question that we had.  For whether or not it was important that a person you date has the same racial and religious background (on a scale of 1-10), we found that both graphs were very similar.  Most people, by a large margin, had no preference (score of 1), and very few people preferred that racial and religious background of their partner be the same as theirs (score of 10). Later, we’ll discuss how racial and/or religious preference impact your likelihood of getting a second date.
+
+
+
