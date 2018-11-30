@@ -12,7 +12,8 @@ What is the Secret to Getting the Second Date?
 ===================================================
 ***What influences love at first sight? (Or, at least, love in the first four minutes?)***
 
-### Introduction:
+Introduction:
+---------------
 
 * Data was gathered from 552 participants in experimental speed dating events from 2002-2004.
 
