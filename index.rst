@@ -48,7 +48,8 @@ Introduction:
 
 ### Experimenting With the Data
 
-.. figure:: https://github.com/mestca01/DataVisProject/blob/master/Correlation%20Heatmap.png
+.. figure:: 'http://knuth.luther.edu/~mestca01/Correlation%20Heatmap.png'
+https://knuth.luther.edu:8443/user/mestca01/view/public_html/DS_320_Figures/Correlation%20Heatmap.png
 
 
 In the beginning of our exploration, we thought about making a scatterplot matrix of all of the activity interest values (i.e. sports interest from 1-10), but found a much better way of visualizing correlations, called a heatmap matrix.  This showed us correlation on a scale from dark color (low correlation) to light color (high correlation).  From this, we were able to see that some interests, like sports and TV sports, or art and museums, had high correlation with each other, indicating that if people were interested in art, they were more likely to be interested in museums, and the same for sports and TV sports. Some examples of interests that did not correlate quite often involved sports and fine arts-related activities.
