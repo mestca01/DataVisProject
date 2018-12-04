@@ -48,7 +48,7 @@ Cleaning the Data:
    
    However, we discovered that there were some columns and rows that could have possibly affected our results negatively.  We decided to take out columns that were missing large amounts of data and were not that important for the question that we were asking (the data set contains 190 columns, so we were not very worried about taking some out).  We took out these columns in python using “iloc” to select our columns and “concat” to put all of them together into a new data frame.  This allows us to go back and add any columns that we took out in case we needed them in the future.  Taking these columns out in Excel, or directly from the csv, would permanently delete these columns, not allowing us to add any of the columns back if we needed them.  It also allows us to use pandas’ “dropnas” without deleting rows that have N/As in columns that we do not need.
    
-   We also discovered that one of the speed dating waves, wave 12, would affect our data negatively.   This particular wave had a certain restriction that was inconsistent with the rest of our data.  In this wave, the participants were only allowed to say yes to a second date to 50% of their dates.  We decided that these rows risked affecting our results negatively.  Since we have thousands of observations in this data set anyway, we decided that it would be beneficial to our analysis if we removed wave 12 from our data frame.
+   We also discovered that one of the speed dating waves, wave 12, would affect our data negatively.   This particular wave had a certain restriction that was inconsistent with the rest of our data.  In this wave, **the participants were only allowed to say yes to a second date to 50% of their dates**.  We decided that these rows risked affecting our results negatively.  Since we have thousands of observations in this data set anyway, we decided that it would be beneficial to our analysis if we removed wave 12 from our data frame.
 
 Experimenting With the Data
 ------------------------------
@@ -64,7 +64,7 @@ In the beginning of our exploration, we thought about making a scatterplot matri
 .. figure:: RacialPreference.png
 
 
-From these bar graphs, we found an answer to an early question that we had.  For whether or not it was important that a person you date has the same racial and religious background (on a scale of 1-10), we found that both graphs were very similar.  Most people, by a large margin, had no preference (score of 1), and very few people preferred that racial and religious background of their partner be the same as theirs (score of 10). Later, we’ll discuss how racial and/or religious preference impact your likelihood of getting a second date.
+From these bar graphs, we found an answer to an early question that we had.  For whether or not it was important that a person you date has the same racial and religious background (on a scale of 1-10), we found that both graphs were very similar.  **Most people, by a large margin, had no preference (score of 1), and very few people preferred that racial and religious background of their partner be the same as theirs (score of 10)**. Later, we’ll discuss how racial and/or religious preference impact your likelihood of getting a second date.
 
 
 .. figure:: MatchesYouHaveCalled.png
@@ -118,7 +118,7 @@ While there is no point allocation, on average, both genders do not rate themsel
     :scale: 75 %
     :align: center
 
-When looking at box plot comparisons of broken hearts by religious and racial preference (on a scale of one to ten, how important is it that your partner be the same race/religion as you?), we were surprised to see that both comparisons had matching box plots, indicating that racial and religious preference also had no significant impact on broken hearts.
+When looking at box plot comparisons of broken hearts by religious and racial preference (on a scale of one to ten, how important is it that your partner be the same race/religion as you?), we were surprised to see that both comparisons had matching box plots, indicating that **racial and religious preference had no significant impact on broken hearts**.
 
 
 
@@ -144,7 +144,7 @@ When looking at box plot comparisons of broken hearts by religious and racial pr
 
 The only box plot comparison that appears to be different from the others is intelligence.  For broken hearts, the observations are between a six and a ten score for intelligence, while matches are between three and ten.  However, this is not a significant difference, because 50% of the data is still centered between a 6 and an 8 score for intelligence, and broken hearts have several outliers below an intelligence score of six, indicating that a participant’s intelligence does not appear to affect their chances of having a broken heart.
 
-Interestingly enough, although our bar graphs showed that people generally prefer that their partner is attractive and intelligent, when looking at these plots, a participant’s grade by their partner does not seem to affect whether the participant has a broken heart or does not have a broken heart.  This suggests that none of these characteristics matter when securing a second date.  It instead suggests that there may be other variables present that cannot be measured on a scale of 1-10.  In the end, it is clear that you should just be yourself and not worry about what your grade may be on certain characteristics.
+Interestingly enough, although our bar graphs showed that people generally prefer that their partner is attractive and intelligent, when looking at these plots, a participant’s grade by their partner does not seem to affect whether the participant has a broken heart or does not have a broken heart.  This suggests that none of these characteristics matter when securing a second date.  It instead suggests that there may be other variables present that cannot be measured on a scale of 1-10.  **In the end, it is clear that you should just be yourself and not worry about what your grade may be on certain characteristics**.
 
 
 
