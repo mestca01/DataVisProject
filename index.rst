@@ -48,7 +48,7 @@ Introduction:
 
 ### Experimenting With the Data
 
-.. figure:: 'http://knuth.luther.edu/~mestca01/DS_320_Figures/Correlation%20Heatmap.png'
+.. figure:: Correlation\ Heatmap.png
 https://knuth.luther.edu:8443/user/mestca01/view/public_html/DS_320_Figures/Correlation%20Heatmap.png
 
 

@@ -1,0 +1,1218 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>&lt;no title&gt; &#8212; Speed Dating Project  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">Speed Dating Project  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 7ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+</style>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import matplotlib.patches as mpatches
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>dating = pd.read_csv(&#39;http://knuth.luther.edu/~mestca01/Speed_Dating_Data.csv&#39;)
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>print(&#39;Total number of people that participated, assuming person does not appear in more than one wave: {}&#39;.format(len(dating[&#39;iid&#39;].unique())))
+print(&#39;Total number of dates occurred: {}&#39;.format(len(dating.index)))
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Total number of people that participated, assuming person does not appear in more than one wave: 551
+Total number of dates occurred: 8378
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span># out of curiosity, I want to see how many speed daters found a match!
+pd.crosstab(index=dating[&#39;match&#39;],columns=&quot;count&quot;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[6]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>col_0</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>match</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>6998</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1380</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>(1380/6998)*100
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[7]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>19.719919977136325
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span># narrowing dataset
+dating_1 = dating.iloc[:, 11:28]
+dating_2 = dating.iloc[:, 30:35]
+dating_3 = dating.iloc[:, 39:43]
+dating_4 = dating.iloc[:, 45:67]
+dating_5 = dating.iloc[:, 69:74]
+dating_6 = dating.iloc[:, 87:91]
+dating_7 = dating.iloc[:, 97:102]
+dating_8 = dating.iloc[:, 104:107]
+
+date = pd.concat([dating.iloc[:, 0],dating.iloc[:, 2],dating_1,dating_2,dating_3,dating_4,dating_5, dating_6,dating_7,dating_8], axis=1)
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>date2 = date.dropna()
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>date3 = date2.drop([&#39;field&#39;, &#39;from&#39;, &#39;career&#39;], axis=1)
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>interests = dating.iloc[:, 50:67]
+interests.head()
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sports</th>
+      <th>tvsports</th>
+      <th>exercise</th>
+      <th>dining</th>
+      <th>museums</th>
+      <th>art</th>
+      <th>hiking</th>
+      <th>gaming</th>
+      <th>clubbing</th>
+      <th>reading</th>
+      <th>tv</th>
+      <th>theater</th>
+      <th>movies</th>
+      <th>concerts</th>
+      <th>music</th>
+      <th>shopping</th>
+      <th>yoga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>9.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>8.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>9.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>8.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>9.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>8.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>8.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9.0</td>
+      <td>2.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>1.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>8.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span># heatmap
+plt.subplots(figsize=(20,15))
+ax = plt.axes()
+ax.set_title(&quot;Correlation Heatmap of Participants Interests in Various Activities&quot;, fontsize=20, fontweight=&#39;bold&#39;)
+corr = interests.corr()
+sns.heatmap(corr,
+            xticklabels=corr.columns.values,
+            yticklabels=corr.columns.values)
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[12]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f96ef3a7048&gt;
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_9_1.png" src="_images/Speed_Dating_Analysis_(2)_9_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(13,6))
+plt.title(&#39;How Important Is It (on a scale of 1-10) That A Person You Date Be Of The Same Racial/Ethnic Background?&#39;, fontsize=18, fontweight=&#39;bold&#39;)
+sns.countplot(dating[&#39;imprace&#39;])
+plt.xlabel(&#39;Importance&#39;, fontweight=&#39;bold&#39;)
+plt.ylabel(&#39;Frequency&#39;, fontweight=&#39;bold&#39;)
+# get rid of &quot;0&quot; column
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[13]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Text(0,0.5,&#39;Frequency&#39;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_10_1.png" src="_images/Speed_Dating_Analysis_(2)_10_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(13,6))
+plt.title(&#39;How Important Is It (on a scale of 1-10) That A Person You Date Be Of The Same Religious Background?&#39;, fontsize=18, fontweight=&#39;bold&#39;)
+sns.countplot(dating[&#39;imprelig&#39;])
+plt.xlabel(&#39;Importance&#39;, fontweight=&#39;bold&#39;)
+plt.ylabel(&#39;Frequency&#39;, fontweight=&#39;bold&#39;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[14]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Text(0,0.5,&#39;Frequency&#39;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_11_1.png" src="_images/Speed_Dating_Analysis_(2)_11_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span># looking at dec_o by gender
+#It looks like women received about 1750 &#39;no&#39; and about 1600 &#39;yes&#39; for the decision question &quot;Would you like to see him or her again?&quot;. Men received about 2050 &#39;no&#39; and about 1300 &#39;yes&#39;. In other words, men are more likely to be rejected by women than women are to be rejected by men (wahwah).
+sns.set(style=&quot;ticks&quot;, color_codes=True)
+g = sns.FacetGrid(dating, col=&quot;gender&quot;)
+g = g.map(plt.hist, &quot;dec_o&quot;)
+plt.ticklabel_format(useOffset=False, style=&#39;plain&#39;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_12_0.png" src="_images/Speed_Dating_Analysis_(2)_12_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>attributes_gender = dating[[&#39;gender&#39;,&#39;attr1_1&#39;, &#39;sinc1_1&#39;,&#39;intel1_1&#39;,&#39;fun1_1&#39;,&#39;amb1_1&#39;,&#39;shar1_1&#39;]].groupby(&#39;gender&#39;).mean()
+cols = [&#39;Attractive&#39;,&#39;Sincere&#39;,&#39;Intelligent&#39;,&#39;Fun&#39;,&#39;Ambition&#39;,&#39;Shared Interests&#39;]
+attributes_gender.columns = cols
+attributes_gender
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[16]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Attractive</th>
+      <th>Sincere</th>
+      <th>Intelligent</th>
+      <th>Fun</th>
+      <th>Ambition</th>
+      <th>Shared Interests</th>
+    </tr>
+    <tr>
+      <th>gender</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>18.055224</td>
+      <td>18.305008</td>
+      <td>21.002502</td>
+      <td>17.147292</td>
+      <td>12.827222</td>
+      <td>12.704194</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>26.921689</td>
+      <td>16.498436</td>
+      <td>19.537374</td>
+      <td>17.763893</td>
+      <td>8.552829</td>
+      <td>10.996574</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>attributes_gender.T.plot(kind=&#39;bar&#39;, width=0.8, figsize=(10,10), color=[&#39;pink&#39;, &#39;darkblue&#39;])
+plt.xticks(rotation=35)
+plt.xlabel(&#39;Attributes&#39;, size=14, fontweight=&quot;bold&quot;)
+plt.ylabel(&#39;Average Score&#39;, size = 14, fontweight=&quot;bold&quot;)
+plt.title(&quot;What People Are Looking For in the Opposite Sex&quot;, size = 16, fontweight=&quot;bold&quot;)
+female = mpatches.Patch(color=&#39;pink&#39;, label=&#39;Female&#39;)
+male = mpatches.Patch(color=&#39;darkblue&#39;, label=&#39;Male&#39;)
+plt.legend(handles=[female, male])
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[17]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>&lt;matplotlib.legend.Legend at 0x7f96ee6fe7f0&gt;
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_14_1.png" src="_images/Speed_Dating_Analysis_(2)_14_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span># Men&#39;s are mostly looking for attractive woman, while women are looking for a well rounded man
+#We can see that there is a great difference between what male and female participants are looking for.
+#For male participants, the attractiveness of the female is given a lot more weight, and the ambitiousness or if they have any shared interset are ranked not as high.
+#For females, the points are more evenly distributed across all of the attributes, with intelligence ranked slightly higher compared to others.
+#Men are looking for attractive women, and are less concerned with a woman’s abmition and shared interests. On the other hand, women are looking for a well-rounded male and value intelligence in a man.
+
+# Now let&#39;s take a look on &#39;What do you think the opposite sex looks for on a date?&#39;
+attributes_gender_2 = dating[[&#39;gender&#39;,&#39;attr2_1&#39;, &#39;sinc2_1&#39;,&#39;intel2_1&#39;,&#39;fun2_1&#39;,&#39;amb2_1&#39;,&#39;shar2_1&#39;]].groupby(&#39;gender&#39;).mean()
+cols = [&#39;Attractive&#39;,&#39;Sincere&#39;,&#39;Intelligent&#39;,&#39;Fun&#39;,&#39;Ambition&#39;,&#39;Shared Interests&#39;]
+attributes_gender_2.columns = cols
+attributes_gender_2
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[18]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Attractive</th>
+      <th>Sincere</th>
+      <th>Intelligent</th>
+      <th>Fun</th>
+      <th>Ambition</th>
+      <th>Shared Interests</th>
+    </tr>
+    <tr>
+      <th>gender</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>35.694349</td>
+      <td>11.343646</td>
+      <td>12.532022</td>
+      <td>18.733510</td>
+      <td>9.230638</td>
+      <td>12.645113</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>25.092631</td>
+      <td>15.181078</td>
+      <td>16.279633</td>
+      <td>18.115379</td>
+      <td>14.234815</td>
+      <td>11.071924</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>#Women strongly feel that men are most concerned with a woman’s attractiveness and that other attributes are not as important, especially ambitiousness.
+#Comparing female and male answers in the first graph, we can see that there are not that much difference between the two. We can say that women almost accurately predicted what men are looking for in their partners (i.e. attractiveness).
+#Additionally, men’s predictions were not far off either. By comparing males’ responses here and female’s responses in the first graph, what men think women are looking for also closely resembles what women say they are looking for. The main differences, though, are a higher attractiveness score and a lower shared interest score.
+#Both men and women can predict what the opposite sex are looking for in their partners to a certain degree.
+
+attributes_gender_2.T.plot(kind=&#39;bar&#39;, width=0.8, figsize=(10,10), color=[&#39;pink&#39;, &#39;darkblue&#39;])
+plt.xticks(rotation=35)
+plt.xlabel(&#39;Attributes&#39;, size=14, fontweight=&quot;bold&quot;)
+plt.ylabel(&#39;Average Score&#39;, size = 14, fontweight=&quot;bold&quot;)
+plt.title(&quot;What People Think the Opposite Sex is Looking For&quot;, size = 16, fontweight=&quot;bold&quot;)
+female = mpatches.Patch(color=&#39;pink&#39;, label=&#39;Female&#39;)
+male = mpatches.Patch(color=&#39;darkblue&#39;, label=&#39;Male&#39;)
+plt.legend(handles=[female, male])
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[19]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>&lt;matplotlib.legend.Legend at 0x7f96ee70ac50&gt;
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_16_1.png" src="_images/Speed_Dating_Analysis_(2)_16_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(13,6))
+plt.title(&#39;You Call&#39;, fontsize=18)
+sns.countplot(dating[&#39;you_call&#39;])
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[30]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f2464856d30&gt;
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_17_1.png" src="_images/Speed_Dating_Analysis_(2)_17_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(13,6))
+plt.title(&#39;Them Call&#39;, fontsize=18)
+sns.countplot(dating[&#39;them_cal&#39;])
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[31]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f246484cf28&gt;
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_18_1.png" src="_images/Speed_Dating_Analysis_(2)_18_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>follow_up = dating.iloc[:, 156:159]
+follow_up.head()
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[32]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>you_call</th>
+      <th>them_cal</th>
+      <th>date_3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(13,6))
+plt.title(&#39;Have You Been on a Date with a Match?&#39;, fontsize=18)
+sns.countplot(dating[&#39;date_3&#39;])
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[21]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f96ee75e550&gt;
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_20_1.png" src="_images/Speed_Dating_Analysis_(2)_20_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(13,6))
+plt.title(&#39;How Many Matches Have You Been on a Date With?&#39;, fontsize=18)
+sns.countplot(dating[&#39;numdat_3&#39;])
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[22]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f96ee736a90&gt;
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_21_1.png" src="_images/Speed_Dating_Analysis_(2)_21_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [60]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>#So it seems 26% of participants unfortunately had their heart broken. More than the percentage of people who got a second date!
+no_love_count = len(date3[(date3[&#39;dec_o&#39;]==0) &amp; (date3[&#39;dec&#39;]==1)])
++ len(date3[(date3[&#39;dec_o&#39;]==1) &amp; (date3[&#39;dec&#39;]==0)])
+perc_broken_heart = no_love_count / len(date3.index)
+perc_broken_heart*100
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[60]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>26.040900397234072
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [61]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>#On an unrelated note, I wonder if the incidence of unrequited love differs by the attractiveness of the partner.
+#encoding unrequited love as a new column (url) where decision of partner is no but decision of participant is yes, or where decision of partner is yes but decision of participant is no
+date3[&#39;url&#39;]=np.where(((date3[&#39;dec_o&#39;]==0) &amp; (date3[&#39;dec&#39;]==1))|((date3[&#39;dec&#39;]==0) &amp; (date3[&#39;dec_o&#39;]==1)),1,0)
+#when true/someone&#39;s heart is broken, url value is 1. when false/heart is no broken/both like each other, url value is 0
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [71]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span># looking at url by attractiveness
+plt.subplot(1,3,1)
+plt.figure(figsize=(7,9))
+sns.boxplot(x=&#39;url&#39;, y=&#39;attr&#39;, data=date3, palette=&#39;Blues&#39;)
+plt.title(&#39;Broken Hearts by Attractiveness of Partner&#39;, fontsize=20)
+plt.xlabel(&#39;Broken Heart&#39;, fontsize=16)
+#Looks like the difference in attractiveness was not statistically significant. So the good news is, the likelihood of getting rejected is not dependent on your attractiveness!
+
+#subplot1
+plt.subplot(1,3,2)
+sns.boxplot(x=&#39;url&#39;, y=&#39;attr&#39;, data=date3, palette=&#39;Blues&#39;)
+plt.title(&#39;Broken Hearts by Sincerity of Partner&#39;, fontsize=20)
+plt.xlabel(&#39;Broken Heart&#39;, fontsize=16)
+plt.show()
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_24_0.png" src="_images/Speed_Dating_Analysis_(2)_24_0.png" />
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_24_1.png" src="_images/Speed_Dating_Analysis_(2)_24_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [65]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(7,9))
+sns.boxplot(x=&#39;url&#39;, y=&#39;sinc&#39;, data=date3, palette=&#39;Blues&#39;)
+plt.title(&#39;Broken Hearts by Sincerity of Partner&#39;, fontsize=20)
+plt.xlabel(&#39;Broken Heart&#39;, fontsize=16)
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[65]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Text(0.5,0,&#39;Broken Heart&#39;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Speed_Dating_Analysis_(2)_25_1.png" src="_images/Speed_Dating_Analysis_(2)_25_1.png" />
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>plt.figure(figsize=(7,9))
+sns.boxplot(x=&#39;url&#39;, y=&#39;attr&#39;, data=date3, palette=&#39;Blues&#39;)
+plt.title(&#39;Broken Hearts by Attractiveness of Partner&#39;, fontsize=20)
+plt.xlabel(&#39;Broken Heart&#39;, fontsize=16)
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">Speed Dating Project  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Hans Larson, Carly Mester.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
+    </div>
+  </body>
+</html>
