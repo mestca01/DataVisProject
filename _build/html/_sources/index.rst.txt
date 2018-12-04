@@ -10,6 +10,9 @@
 
 What is the Secret to Getting the Second Date?
 ===================================================
+*DS-320 Data Visualization:*
+*Carly Mester, Hans Larson*
+
 **What influences love at first sight? (Or, at least, love in the first four minutes?)**
 
 Introduction:
